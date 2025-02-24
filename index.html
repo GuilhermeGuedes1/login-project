@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/query.css">
+    <title>Pagina de login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                
+                <form action="login.js" method="POST" autocomplete="on"> 
+                    <div class="campo">
+                        <i class='bx bx-user'></i>
+                        <input id="iemail" type="email" placeholder="Informe seu email" autocomplete="email" required>
+                        <label for="iemail">Login</label>                        
+                    </div>
+                     
+                    <div class="campo">
+                        <i class='bx bx-key'></i>
+                        <input type="password" required placeholder="Digite sua senha" autocomplete="current-password" id="ipass" minlength="4" maxlength="12">
+                        <label for="ipass">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar" id="entrar">
+                    <a class="botao" href="#">Esqueci a senha  <i class='bx bx-envelope'></i></a>
+              
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>
